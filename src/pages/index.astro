@@ -1,9 +1,8 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import MyH1 from "../components/MyH1.astro";
-import srcImage from "../assets/fishing-near-medford-oregon.webp";
+import srcImage from "../assets/fishing-near-medford-oregon.png";
 import { Image } from "astro:assets";
-import Link from "../components/Link.astro";
 ---
 <Layout 
 title="Fishing near Medford, Oregon"
@@ -13,7 +12,7 @@ type="website"
 site_name="Oregon Fishing Forum"
 ogimage={srcImage.src}
 >
-    <center>
+    <div class="text-center">
 			<MyH1 text="Fishing near Medford, Oregon" />
 			<p class="mb-4">Discover the top places for fishing near Medford, Oregon, in this 2025 guide. Learn about 
 				rivers, lakes, gear tips, licenses, and more.</p>
@@ -21,20 +20,24 @@ ogimage={srcImage.src}
 			<Image
 				src={srcImage}
 				alt="Fishing near Medford, Oregon"
+                width={1344}
+                height={768}
 				loading={"eager"}
 				fetchpriority={"high"}
+                layout='constrained'
+                class="rounded-xl shadow mx-auto"
 				/>
 				<br>
-			</center>
+    </div>
 
 <h2>
-    <strong>Introduction: Medford’s Gateway to Southern Oregon Fishing</strong>
+    Introduction: Medford’s Gateway to Southern Oregon Fishing
 </h2>
 <p>
     Located in the heart of the Rogue Valley, <strong>Medford, Oregon</strong> is a paradise for anglers. With its mild climate, diverse landscapes, and easy access to mountain lakes and famous rivers, Medford offers fishing opportunities year-round. Whether you're chasing wild steelhead in the Rogue River or trolling for kokanee in Applegate Lake, this region has something for everyone—from seasoned fly fishers to weekend bank anglers.
 </p>
 <h2>
-    <strong>Fish Species You Can Catch Near Medford</strong>
+    Fish Species You Can Catch Near Medford
 </h2>
 <p>
     Southern Oregon waters are rich in variety. Here's what you can expect to catch:
@@ -60,55 +63,55 @@ ogimage={srcImage.src}
     </li>
 </ul>
 <h2>
-    <strong>Prime Fishing Lakes Near Medford, Oregon</strong>
+    Prime Fishing Lakes Near Medford, Oregon
 </h2>
 <h3>
-    <strong>Applegate Lake</strong>
+    Applegate Lake
 </h3>
 <p>
     Located 45 minutes southwest of Medford, Applegate Lake is known for <strong>kokanee, rainbow trout, and smallmouth bass</strong>. Fish near the dam for kokanee or troll deeper sections during summer.
 </p>
 <h3>
-    <strong>Emigrant Lake</strong>
+    Emigrant Lake
 </h3>
 <p>
     Just outside of town, Emigrant is stocked with <strong>trout</strong> in spring and fall. It also supports <strong>bass, catfish, and panfish</strong>. Great for families and kayak anglers.
 </p>
 <h3>
-    <strong>Lost Creek Lake</strong>
+    Lost Creek Lake
 </h3>
 <p>
     A large reservoir northeast of Medford with great facilities and consistent trout fishing. Trolling and bank fishing are popular methods here. Holds <strong>chinook, rainbow trout, and even some landlocked steelhead</strong>.
 </p>
 <h3>
-    <strong>Howard Prairie &amp; Hyatt Lake</strong>
+    Howard Prairie &amp; Hyatt Lake
 </h3>
 <p>
     High-elevation lakes east of Ashland with excellent spring and early summer trout fishing. Cooler temps and scenic views make them great camping and fishing destinations.
 </p>
 <h2>
-    <strong>Best Rivers for Fishing Near Medford</strong>
+    Best Rivers for Fishing Near Medford
 </h2>
 <h3>
-    <strong>Rogue River</strong>
+    Rogue River
 </h3>
 <p>
     A <strong>world-class steelhead and salmon fishery</strong>, the Rogue runs from Crater Lake to the Pacific Ocean. Near Medford, it offers <strong>summer and winter steelhead</strong>, <strong>spring and fall Chinook</strong>, and <strong>resident trout</strong>. Use spinners, drift gear, or flies depending on the season.
 </p>
 <h3>
-    <strong>Applegate River</strong>
+    Applegate River
 </h3>
 <p>
     Smaller and more intimate than the Rogue, the Applegate is a popular winter steelhead destination. Fly anglers enjoy solitude and challenge here. Only open to catch-and-release trout fishing in summer months.
 </p>
 <h3>
-    <strong>Bear Creek</strong>
+    Bear Creek
 </h3>
 <p>
     An <strong>urban stream</strong> flowing right through Medford. While smaller and more sensitive, it can hold seasonal steelhead and trout in cooler months. Best fished after rainfall when water levels rise.
 </p>
 <h2>
-    <strong>Fishing Seasons in the Rogue Valley</strong>
+    Fishing Seasons in the Rogue Valley
 </h2>
 <figure class="table">
     <table>
@@ -177,7 +180,7 @@ ogimage={srcImage.src}
     &nbsp;
 </p>
 <h2>
-    <strong>Fishing Tactics for Medford’s Lakes and Rivers</strong>
+    Fishing Tactics for Medford’s Lakes and Rivers
 </h2>
 <ul>
     <li>
@@ -194,7 +197,7 @@ ogimage={srcImage.src}
     </li>
 </ul>
 <h2>
-    <strong>Fly Fishing Opportunities Near Medford</strong>
+    Fly Fishing Opportunities Near Medford
 </h2>
 <p>
     Fly anglers love Southern Oregon for:
@@ -214,7 +217,7 @@ ogimage={srcImage.src}
     A 5–6 wt rod is perfect for trout; use 7–8 wt gear for steelhead.
 </p>
 <h2>
-    <strong>Family-Friendly Fishing Locations Around Medford</strong>
+    Family-Friendly Fishing Locations Around Medford
 </h2>
 <ul>
     <li>
@@ -231,7 +234,7 @@ ogimage={srcImage.src}
     Use bobbers and bait for an easy and fun experience.
 </p>
 <h2>
-    <strong>Where to Get Gear: Local Tackle Shops in Medford</strong>
+    Where to Get Gear: Local Tackle Shops in Medford
 </h2>
 <ul>
     <li>
@@ -245,7 +248,7 @@ ogimage={srcImage.src}
     </li>
 </ul>
 <h2>
-    <strong>Oregon Fishing Licenses and Regulations</strong>
+    Oregon Fishing Licenses and Regulations
 </h2>
 <p>
     To fish legally:
@@ -265,7 +268,7 @@ ogimage={srcImage.src}
     </li>
 </ul>
 <h2>
-    <strong>Frequently Asked Questions About Fishing Near Medford, Oregon</strong>
+    Frequently Asked Questions About Fishing Near Medford, Oregon
 </h2>
 <p>
     <strong>Q1: What’s the best lake near Medford for trout?</strong><br>
@@ -292,7 +295,7 @@ ogimage={srcImage.src}
     The <strong>Rogue River</strong> offers the best variety and challenge for fly anglers.
 </p>
 <h2>
-    <strong>Conclusion: Hook Into Southern Oregon’s Fishing Scene</strong>
+    Conclusion: Hook Into Southern Oregon’s Fishing Scene
 </h2>
 <p>
     Whether you’re casting into a tranquil alpine lake or chasing steelhead in the legendary Rogue River, <strong>fishing near Medford, Oregon</strong> is a year-round adventure full of possibilities. With countless options just a short drive from town, this region is a true gem for anglers of all skill levels. Grab your rod, check your regs, and get out there—your next big catch is waiting.
