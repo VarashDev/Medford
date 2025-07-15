@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/trout-fishing-near-medford-oregon.png";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Trout Fishing near Medford, Oregon"
@@ -219,6 +220,9 @@ ogimage={srcImage.src}
 <p>
     These ponds are often stocked during “Free Fishing Days” and provide great entry points for beginners.
 </p>
+
+<p>Read more about <Link href="/trout/best-spots/" text="Best trout fishing spots near Medford, Oregon" />
+
 <h2>
     Fly Fishing vs. Spin Fishing for Trout
 </h2>

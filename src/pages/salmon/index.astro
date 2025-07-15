@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/salmon-fishing-near-medford-oregon.png";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Salmon Fishing near Medford, Oregon"
@@ -176,6 +177,7 @@ ogimage={srcImage.src}
 <p>
     For the more adventurous, the Illinois River offers remote access and pristine fishing conditions. It’s best suited for experienced anglers due to access limitations.
 </p>
+<p>Read more about <Link href="/salmon/best-spots/" text="Best salmon fishing spots near Medford, Oregon" />
 <h2>
     Shore Fishing, Drift Boats, and Raft Options
 </h2>

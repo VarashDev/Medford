@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/steelhead-fishing-near-medford-oregon.png";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Steelhead Fishing near Medford, Oregon"
@@ -228,6 +229,8 @@ ogimage={srcImage.src}
 <p>
     Remote and wild, the Illinois is a challenge but rewards skilled anglers with big native steelhead. Best accessed during stable winter weather and requires a hike or raft in many spots.
 </p>
+<p>Read more about <Link href="/steelhead/best-spots/" text="Best steelhead fishing spots near Medford, Oregon" />
+
 <h2>
     Bank vs. Drift Boat vs. Fly Fishing Access
 </h2>

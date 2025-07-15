@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import srcImage from "../../assets/bass-fishing-near-medford-oregon.png";
 import { Image } from "astro:assets";
 import MyH1 from "../../components/MyH1.astro";
+import Link from "../../components/Link.astro";
 ---
 <Layout 
 title="Bass Fishing near Medford, Oregon"
@@ -203,6 +204,7 @@ ogimage={srcImage.src}
 <p>
     Further south near California’s border, backwater sloughs and estuaries offer hybrid opportunities—best for advanced anglers.
 </p>
+<p>Read more about <Link href="/bass/best-spots/" text="Best bass fishing spots near Medford, Oregon" />
 <h2>
     Bank Fishing vs. Kayak and Boat Fishing
 </h2>
