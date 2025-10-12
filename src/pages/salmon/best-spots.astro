@@ -14,22 +14,29 @@ site_name="Oregon Fishing Forum"
 ogimage={srcImage.src}
 footer_location="salmon-best-spots"
 >
-    <div class="text-center">
-			<MyH1 text="Best salmon fishing spots near Medford, Oregon" />
-			<p class="mb-4">Comprehensive guide to the best salmon fishing hotspots – with seasonal tips, gear suggestions, and local insights.</p>
 
-			<Image
-				src={srcImage}
-				alt="Best salmon fishing spots near Medford, Oregon"
-                width={1344}
-                height={768}
-				loading={"eager"}
-				fetchpriority={"high"}
-                layout='constrained'
-                class="rounded-xl shadow mx-auto"
-				/>
-				<br>
-    </div>
+<section class="flex flex-col md:flex-row items-center justify-between p-6 md:p-12">
+  <!-- Text section -->
+  <div class="md:w-1/2 text-center md:text-left mb-6 md:mb-0">
+    <MyH1 text="Best salmon fishing spots near Medford, Oregon" />
+    <p class="mb-4">
+        Comprehensive guide to the best salmon fishing hotspots – with seasonal tips, gear suggestions, and local insights.
+    </p>
+  </div>
+
+  <!-- Image section -->
+  <div class="md:w-1/2 flex justify-center">
+    <Image 
+      src={srcImage} 
+      alt="Best salmon fishing spots near Medford, Oregon" 
+      loading={"eager"}
+		fetchpriority={"high"}
+      width={500}           
+      format="webp"        
+      class="rounded-xl shadow-lg object-cover w-full max-w-md"
+    />
+  </div>
+</section>
 
 <h3>
     <strong>1. Upper Rogue River (Shady Cove to Lost Creek Dam)</strong>
